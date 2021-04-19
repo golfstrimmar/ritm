@@ -1,0 +1,77 @@
+.btn 
+  border: 1px solid transparent
+  outline: none!important
+  border-radius: 5px
+  transition: all 0.2s ease-in-out
+  diplay: inline-block
+  font-family: 'Oswald', sans-serif
+  +center
+
+
+.btn--light,.btn--cross
+  i
+    margin: 0 0 0 0
+    font-size: 20px
+  &:hover
+    +bg(lighten($active,30%))
+    +border(1px , darken($active,10%)!important)
+    box-shadow: 0px 0px 20px lighten($dark-1,60%)!important
+    color: lighten($active,10%)
+  &:focus
+    +border(1px , darken($active,10%)!important)
+    +bg(lighten($active,10%))
+    box-shadow: 0px 0px 20px lighten($dark-1,60%)!important
+    color: white
+    &>span
+      color: white
+
+
+.btn--success
+  color: white
+  +bg($active)
+  &:hover
+    +bg(lighten($active,30%))
+    +border(1px , darken($active,10%)!important)
+    box-shadow: 0px 0px 20px lighten($dark-1,60%)!important
+    color: lighten($active,10%)
+  &:focus
+    +border(1px , darken($active,10%)!important)
+    +bg(lighten($active,10%))
+    box-shadow: 0px 0px 20px lighten($dark-1,60%)!important
+    color: white
+   
+.btn--success-icon
+  i
+    margin: 0 14px 0 0
+    font-size: 20px
+  span
+      margin: 0 0 0 0
+  &:hover
+    i, span
+      color: lighten($active,10%)
+      
+  &:focus
+    i, span
+      color: white
+  
+.btn--empty 
+  +bg(white)
+  +border(1px,#757575)
+  border-radius: 5px
+  &:hover
+    +bg(lighten($active,30%))
+    +border(1px , darken($active,10%)!important)
+    box-shadow: 0px 0px 20px lighten($dark-1,60%)!important
+    color: lighten($active,10%)
+    i, span
+      color: lighten($active,10%)
+  &:focus
+    +border(1px , darken($active,10%)!important)
+    +bg(lighten($active,10%))
+    box-shadow: 0px 0px 20px lighten($dark-1,60%)!important
+    color: white
+    i, span
+      color: white
+
+ 
+

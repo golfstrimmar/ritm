@@ -1,0 +1,23 @@
+section.first
+  .first__title
+    h1  Весенние ритмы-2021
+    ._title-1 г. Мариуполь
+
+  header.header
+    .header__body.container
+      nav.header__menu.menu
+        i.icon-x.header__close
+        ul.menu__list
+          - 
+            items = [
+              { title: "Главная" },
+              { title: "Расписание турнира" },
+              { title: "Предварительная регистрация" },
+              { title: "Предварительные списки участников" },
+              { title: "Контакты" },
+            ]
+          each item in items
+            li.menu__item
+              a.menu__link(href="#!")=item.title
+      i.icon-align-justify.header__burger
+
